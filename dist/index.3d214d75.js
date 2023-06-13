@@ -32429,31 +32429,19 @@ var _login = require("./Login");
 var _loginDefault = parcelHelpers.interopDefault(_login);
 var _user = require("./User");
 var _userDefault = parcelHelpers.interopDefault(_user);
-var _s = $RefreshSig$();
 function App() {
-    _s();
-    const [comments, setComments] = (0, _react.useState)(null);
-    (0, _react.useEffect)(()=>{
-        getComments();
-    }, []);
-    const getComments = ()=>{
-        fetch("https://jsonplaceholder.typicode.com/comments").then((res)=>{
-            return res.json();
-        }).then((data)=>{
-            console.log(data.length);
-            const firstcomments = data.slice(0, 20);
-            setComments(firstcomments);
-        }).catch(function(err) {
-            console.log(err);
-        });
-    };
-    if (comments === null) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: "Loading..."
-    }, void 0, false, {
-        fileName: "components/app.js",
-        lineNumber: 30,
-        columnNumber: 12
-    }, this);
+    //const [comments, setComments] = useState(null);
+    // useEffect(() => {
+    //     getComments();
+    // }, []);
+    // const getComments = () => {
+    //     fetch('http://localhost:3000/comments')
+    //     .then(res => res.json())
+    //     .then(data =>{
+    //         console.log(data);
+    //         setComments(data);
+    //     })
+    // }
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
             children: [
@@ -32462,7 +32450,7 @@ function App() {
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "components/app.js",
-                    lineNumber: 37,
+                    lineNumber: 27,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -32470,28 +32458,25 @@ function App() {
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "components/app.js",
-                    lineNumber: 38,
+                    lineNumber: 28,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
                     path: "comment",
-                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userDefault.default), {
-                        comments: comments
-                    }, void 0, false, void 0, void 0)
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "components/app.js",
-                    lineNumber: 39,
+                    lineNumber: 29,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "components/app.js",
-            lineNumber: 36,
+            lineNumber: 26,
             columnNumber: 5
         }, this)
     }, void 0, false);
 }
-_s(App, "ZGCSzysacf8QtQVuU28gpf41IwQ=");
 _c = App;
 var _c;
 $RefreshReg$(_c, "App");
@@ -32532,7 +32517,7 @@ function Login() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                class: "text-center text-3xl mt-10 bg-slate-200 rounded-xl mx-auto h-10 w-1/3",
+                className: "text-center text-3xl mt-10 bg-slate-200 rounded-xl mx-auto h-10 w-1/3",
                 children: "Login"
             }, void 0, false, {
                 fileName: "components/Login.js",
@@ -32540,7 +32525,7 @@ function Login() {
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                class: "flex flex-col items-center mt-8 w-1/3 mx-auto h-80 bg-slate-100 rounded-xl shadow-lg   ",
+                className: "flex flex-col items-center mt-8 w-1/3 mx-auto h-80 bg-slate-100 rounded-xl shadow-lg   ",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                         className: "mt-7 text-xl",

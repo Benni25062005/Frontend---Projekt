@@ -26,7 +26,7 @@ export default function App() {
     <Routes>
         <Route index element={<Login />} />
         <Route path="login" element={<Login/>} />
-        <Route path="comment" element={<User comments={comments}/>} />
+        <Route path="comment" element={<User comments={comments} />} />
     </Routes>
 
     </>)
