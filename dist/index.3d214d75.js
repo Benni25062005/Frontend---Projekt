@@ -70515,20 +70515,20 @@ function User({ comments  }) {
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                class: "grid bg-slate-200 mx-auto w-1/2 h-[40rem] rounded-xl mt-10 ",
+                className: "grid bg-slate-200 mx-auto w-1/2 h-[40rem] rounded-xl mt-10 ",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        class: "grid grid-cols-2  place-items-center",
+                        className: "grid grid-cols-2  place-items-center",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                class: " bg-slate-100 rounded-xl shadow-lg w-64 h-36 "
+                                className: " bg-slate-100 rounded-xl shadow-lg w-64 h-36 "
                             }, void 0, false, {
                                 fileName: "components/User.js",
                                 lineNumber: 21,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                class: " bg-slate-100 rounded-xl shadow-lg w-64 h-36 "
+                                className: " bg-slate-100 rounded-xl shadow-lg w-64 h-36 "
                             }, void 0, false, {
                                 fileName: "components/User.js",
                                 lineNumber: 24,
@@ -70541,14 +70541,14 @@ function User({ comments  }) {
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        class: "grid",
+                        className: "grid",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            class: "grid  place-items-end ",
+                            className: "grid  place-items-end ",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                class: "p-6 w-3/5 h-42  bg-slate-100 rounded-xl shadow-lg mx-auto mb-6 ",
+                                className: "p-6 w-3/5 h-42  bg-slate-100 rounded-xl shadow-lg mx-auto mb-6 ",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
-                                        class: "bg-slate-100 border-2 border-gray rounded-xl p-2 resize-none w-full h-20  ",
+                                        className: "bg-slate-100 border-2 border-gray rounded-xl p-2 resize-none w-full h-20  ",
                                         maxLength: "150",
                                         id: "comment",
                                         placeholder: "Kommentar hinzuf\xfcgen..."
@@ -70558,7 +70558,7 @@ function User({ comments  }) {
                                         columnNumber: 22
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                        class: "ml-64 mt-4 border-2 border-transparent bg-sky-400 rounded-xl p-1",
+                                        className: "ml-64 mt-4 border-2 border-transparent bg-sky-400 rounded-xl p-1",
                                         onClick: getComments,
                                         id: "btnsubmit",
                                         children: "Kommentieren"

@@ -15,10 +15,8 @@ export default function App() {
         fetch('http://localhost:3000/db')
             .then(res => {return res.json()})
             .then(data => {
-                console.log("hallo");
 
-                const firstcomments = data.slice(0,20)
-                setComments(firstcomments);
+                setComments(data);
 
             })
                 .catch(function(err){
