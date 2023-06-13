@@ -14,7 +14,7 @@ export default function User({comments}) {
     }
 
     return<>
-        <h1 class="text-center text-2xl bg-slate-200 rounded-xl w-1/4 mx-auto mt-5 -mb-3 p-1">Kommentare</h1>
+        <h1 className="text-center text-2xl bg-slate-200 rounded-xl w-1/4 mx-auto mt-5 -mb-3 p-1">Kommentare</h1>
         
         <div class="grid bg-slate-200 mx-auto w-1/2 h-[40rem] rounded-xl mt-10 ">
             <div class="grid grid-cols-2  place-items-center">
