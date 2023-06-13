@@ -1,14 +1,8 @@
 import React, { useEffect } from "react";
 import "./Stylesheet.css";
 
-let blöff = 0;
 
 export default function User({comments}) {
-    useEffect(() => {
-        getComments();
-    }, []);
-
-
     const getComments = () => {
         console.log(comments)
     }
@@ -18,9 +12,13 @@ export default function User({comments}) {
         
         <div className="grid bg-slate-200 mx-auto w-1/2 h-[40rem] rounded-xl mt-10 ">
             <div className="grid grid-cols-2  place-items-center">
-                <div className=" bg-slate-100 rounded-xl shadow-lg w-64 h-36 ">
-
-                </div>
+                {comments.map((comment) => (
+                    <div className=" bg-slate-100 rounded-xl shadow-lg w-64 h-36 " key={comment.id}>
+                        {comment.body}
+                        {comment.email}
+                    </div>
+                ))}
+                
                 <div className=" bg-slate-100 rounded-xl shadow-lg w-64 h-36 ">
                         
                 </div>
