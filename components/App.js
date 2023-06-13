@@ -15,13 +15,13 @@ export default function App() {
         fetch('http://localhost:3000/comments')
         .then(res => res.json())
         .then(data =>{
-            console.log(data);
-            setComments(data.comments);
+            setComments(data);
         })
         .catch(error => {
             console.log(error)
         })
     }
+
 
 
     return( <>

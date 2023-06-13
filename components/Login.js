@@ -9,6 +9,9 @@ export default function Login() {
   const [password, setPassword] = useState(''); 
 
   const handleLogin = () => {
+    if (email.trim() === '' || password.trim() === ''){
+      return;
+    }
 
   console.log("test")
 
@@ -16,8 +19,10 @@ export default function Login() {
   localStorage.setItem('email', email);
   localStorage.setItem('password', hashedPassword);
 
- 
 }
+
+const toPath = email.trim() === '' || password.trim() === '' ? null : "/comment";
+
    
     return(<>
         <h2 className="text-center text-3xl mt-10 bg-slate-200 rounded-xl mx-auto h-10 w-1/3">Login</h2>
@@ -28,7 +33,7 @@ export default function Login() {
             <label className="mt-7 text-xl">Passwort</label>
             <input className="bg-slate-100  mt-2 w-60" type="password" id="password" placeholder="Passwort" value={password} onChange={e => setPassword(e.target.value)}/>
 
-            <Link to="/comment">
+            <Link to={toPath}>
               <button className="bg-slate-200 rounded-xl mt-14 w-60 h-8" type="submit" id="btnsubmit" onClick={handleLogin}  >Login</button>
             </Link>
         </div>
