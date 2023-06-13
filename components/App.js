@@ -12,7 +12,7 @@ export default function App() {
     }, []);
 
     const getComments = () => {
-        fetch('http://localhost:3000/db')
+        fetch('http://localhost:3000/comments')
             .then(res => {return res.json()})
             .then(data => {
 
@@ -27,7 +27,6 @@ export default function App() {
 if (comments === null) {
     return <div>Loading...</div>
 }
-
 
     return( <>
         
