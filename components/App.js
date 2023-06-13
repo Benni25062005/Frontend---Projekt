@@ -12,7 +12,7 @@ export default function App() {
     }, []);
 
     const getComments = () => {
-        fetch('https://jsonplaceholder.typicode.com/comments')
+        fetch('http://localhost:3000/db')
             .then(res => {return res.json()})
             .then(data => {
                 console.log(data.length);

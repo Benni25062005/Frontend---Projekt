@@ -10,8 +10,7 @@ export default function User({comments}) {
 
 
     const getComments = () => {
-        const firstcomments = comments.slice(0,20);
-        console.log(firstcomments)
+        console.log(comments)
     }
 
     return<>

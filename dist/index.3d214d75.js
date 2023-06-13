@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"2UeK4":[function(require,module,exports) {
+})({"4H3pI":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -70495,14 +70495,14 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _stylesheetCss = require("./Stylesheet.css");
 var _s = $RefreshSig$();
+let blöff = 0;
 function User({ comments  }) {
     _s();
     (0, _react.useEffect)(()=>{
         getComments();
     }, []);
     const getComments = ()=>{
-        const firstcomments = comments.slice(0, 20);
-        console.log(firstcomments);
+        console.log(comments);
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
@@ -70511,7 +70511,7 @@ function User({ comments  }) {
                 children: "Kommentare"
             }, void 0, false, {
                 fileName: "components/User.js",
-                lineNumber: 16,
+                lineNumber: 17,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -70524,20 +70524,20 @@ function User({ comments  }) {
                                 class: " bg-slate-100 rounded-xl shadow-lg w-64 h-36 "
                             }, void 0, false, {
                                 fileName: "components/User.js",
-                                lineNumber: 20,
+                                lineNumber: 21,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 class: " bg-slate-100 rounded-xl shadow-lg w-64 h-36 "
                             }, void 0, false, {
                                 fileName: "components/User.js",
-                                lineNumber: 23,
+                                lineNumber: 24,
                                 columnNumber: 17
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "components/User.js",
-                        lineNumber: 19,
+                        lineNumber: 20,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -70554,7 +70554,7 @@ function User({ comments  }) {
                                         placeholder: "Kommentar hinzuf\xfcgen..."
                                     }, void 0, false, {
                                         fileName: "components/User.js",
-                                        lineNumber: 32,
+                                        lineNumber: 33,
                                         columnNumber: 22
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -70564,29 +70564,29 @@ function User({ comments  }) {
                                         children: "Kommentieren"
                                     }, void 0, false, {
                                         fileName: "components/User.js",
-                                        lineNumber: 33,
+                                        lineNumber: 34,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/User.js",
-                                lineNumber: 31,
+                                lineNumber: 32,
                                 columnNumber: 21
                             }, this)
                         }, void 0, false, {
                             fileName: "components/User.js",
-                            lineNumber: 30,
+                            lineNumber: 31,
                             columnNumber: 17
                         }, this)
                     }, void 0, false, {
                         fileName: "components/User.js",
-                        lineNumber: 29,
+                        lineNumber: 30,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "components/User.js",
-                lineNumber: 18,
+                lineNumber: 19,
                 columnNumber: 9
             }, this)
         ]
@@ -70602,6 +70602,6 @@ $RefreshReg$(_c, "User");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Stylesheet.css":"aWuuH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aWuuH":[function() {},{}]},["2UeK4","1xC6H","bB7Pu"], "bB7Pu", "parcelRequire1696")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Stylesheet.css":"aWuuH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aWuuH":[function() {},{}]},["4H3pI","1xC6H","bB7Pu"], "bB7Pu", "parcelRequire1696")
 
 //# sourceMappingURL=index.3d214d75.js.map
