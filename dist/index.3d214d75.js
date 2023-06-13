@@ -70479,7 +70479,14 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _stylesheetCss = require("./Stylesheet.css");
+var _s = $RefreshSig$();
 function User({ comments  }) {
+    _s();
+    (0, _react.useEffect)(()=>{
+        getComments();
+    }, [
+        comments
+    ]);
     const getComments = ()=>{
         console.log(comments);
     };
@@ -70490,7 +70497,7 @@ function User({ comments  }) {
                 children: "Kommentare"
             }, void 0, false, {
                 fileName: "components/User.js",
-                lineNumber: 11,
+                lineNumber: 15,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -70499,28 +70506,24 @@ function User({ comments  }) {
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "grid grid-cols-2  place-items-center",
                         children: [
-                            comments.map((comment)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: " bg-slate-100 rounded-xl shadow-lg w-64 h-36 ",
-                                    children: [
-                                        comment.body,
-                                        comment.email
-                                    ]
-                                }, comment.id, true, {
-                                    fileName: "components/User.js",
-                                    lineNumber: 16,
-                                    columnNumber: 21
-                                }, this)),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: " bg-slate-100 rounded-xl shadow-lg w-64 h-36 "
                             }, void 0, false, {
                                 fileName: "components/User.js",
-                                lineNumber: 22,
+                                lineNumber: 20,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: " bg-slate-100 rounded-xl shadow-lg w-64 h-36 "
+                            }, void 0, false, {
+                                fileName: "components/User.js",
+                                lineNumber: 25,
                                 columnNumber: 17
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "components/User.js",
-                        lineNumber: 14,
+                        lineNumber: 18,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -70537,7 +70540,7 @@ function User({ comments  }) {
                                         placeholder: "Kommentar hinzuf\xfcgen..."
                                     }, void 0, false, {
                                         fileName: "components/User.js",
-                                        lineNumber: 31,
+                                        lineNumber: 34,
                                         columnNumber: 22
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -70547,34 +70550,35 @@ function User({ comments  }) {
                                         children: "Kommentieren"
                                     }, void 0, false, {
                                         fileName: "components/User.js",
-                                        lineNumber: 32,
+                                        lineNumber: 35,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/User.js",
-                                lineNumber: 30,
+                                lineNumber: 33,
                                 columnNumber: 21
                             }, this)
                         }, void 0, false, {
                             fileName: "components/User.js",
-                            lineNumber: 29,
+                            lineNumber: 32,
                             columnNumber: 17
                         }, this)
                     }, void 0, false, {
                         fileName: "components/User.js",
-                        lineNumber: 28,
+                        lineNumber: 31,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "components/User.js",
-                lineNumber: 13,
+                lineNumber: 17,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true);
 }
+_s(User, "OD7bBpZva5O2jO+Puf00hKivP7c=");
 _c = User;
 var _c;
 $RefreshReg$(_c, "User");

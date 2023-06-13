@@ -5,7 +5,7 @@ import User from "./User"
 
 
 export default function App() {
-    const [comments, setComments] = useState(null);
+    const [comments, setComments] = useState([]);
 
     useEffect(() => {
         getComments();
@@ -16,7 +16,10 @@ export default function App() {
         .then(res => res.json())
         .then(data =>{
             console.log(data);
-            setComments(data);
+            setComments(data.comments);
+        })
+        .catch(error => {
+            console.log(error)
         })
     }
 
