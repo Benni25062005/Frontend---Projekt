@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import "./Stylesheet.css";
 
+let blöff = 0;
+
 export default function User({comments}) {
     useEffect(() => {
         getComments();
