@@ -13,15 +13,13 @@ export default function App() {
 
     const getComments = () => {
         fetch('http://localhost:3000/comments')
-            .then(res => {return res.json()})
-            .then(data => {
+        .then(res => res.json())
+        .then(data =>{
+            console.log(data);
+            setComments(data);
+        })
+    }
 
-                setComments(data);
-
-            })
-                .catch(function(err){
-                console.log(err);
-            });
 };
 
 if (comments === null) {
