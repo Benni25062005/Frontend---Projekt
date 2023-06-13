@@ -231,8 +231,17 @@ img, video {
   --tw-backdrop-sepia: ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
+}
+
+.inset-x-0 {
+  left: 0;
+  right: 0;
 }
 
 .top-96 {
@@ -245,6 +254,10 @@ img, video {
 
 .top-0 {
   top: 0;
+}
+
+.bottom-8 {
+  bottom: 2rem;
 }
 
 .mx-auto {
@@ -292,6 +305,10 @@ img, video {
   margin-top: 2rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -322,6 +339,10 @@ img, video {
 
 .h-\[40rem\] {
   height: 40rem;
+}
+
+.h-max {
+  height: max-content;
 }
 
 .w-1\/2 {
@@ -356,6 +377,10 @@ img, video {
   width: 2rem;
 }
 
+.max-w-md {
+  max-width: 28rem;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -384,10 +409,18 @@ img, video {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .rounded-xl {
@@ -475,6 +508,10 @@ img, video {
 .text-sm {
   font-size: .875rem;
   line-height: 1.25rem;
+}
+
+.opacity-50 {
+  opacity: .5;
 }
 
 .shadow-lg {
