@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import Login from "./Login";
 import User from "./User"
 import Admin from "./admin"
+import Register from "./register";
 
 
 export default function App() {
@@ -11,6 +12,10 @@ export default function App() {
 
     useEffect(() => {
         getComments();
+    }, []);
+
+    useEffect(() => {
+        getUsers();
     }, []);
 
 
@@ -41,6 +46,7 @@ export default function App() {
     <Routes>
         <Route index element={<Login />} />
         <Route path="admin" element={<Admin user={user}/>} />
+        <Route path="register" element={<Register/>} />
         <Route path="login" element={<Login/>} />
         <Route path="comment" element={<User comments={comments} />} />
     </Routes>

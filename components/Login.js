@@ -14,18 +14,32 @@ export default function Login() {
       return;
     }
 
-  console.log("test")
+    fetch('http://localhost:3000/user')
+    .then(res => res.json())
+    .then(data => {
+      const user = data.find(data => data.email === email)
+      if (user && password === user.passwort) {
+
+        localStorage.setItem('email', email);
+        localStorage.setItem('password', hashedPassword);
+
+        if(email == "admin" & password == "admin")
+        {
+          setPath("/admin")
+        }else{
+          setPath("/comment")
+        }
+      } else{
+        alert("Anmeldedaten nicht richitg!")
+      }
+    })
+    .catch(error => {
+      console.log(error)
+    });
+  
 
   const hashedPassword = bcrypt.hashSync(password, 10)
-  localStorage.setItem('email', email);
-  localStorage.setItem('password', hashedPassword);
-
-  if(email == "admin" & password == "admin")
-  {
-    setPath("/admin")
-  }else{
-    setPath("/comment")
-  }
+ 
 
 }
 
@@ -33,10 +47,6 @@ export default function Login() {
 // setPath auf path setzten mit IF abrage 
 // Path variabel unten einsetzen
 
-
-// const toPath = email.trim() === '' || password.trim() === '' ? null : "/comment";
-
-   
     return(<>
         <h2 className="text-center text-3xl mt-10 bg-slate-200 rounded-xl mx-auto h-10 w-1/3">Login</h2>
         <div className="flex flex-col items-center mt-8 w-1/3 mx-auto h-80 bg-slate-100 rounded-xl shadow-lg   ">
@@ -49,10 +59,11 @@ export default function Login() {
             <Link to={path}>
               <button className="bg-slate-200 rounded-xl mt-14 w-60 h-8" type="submit" id="btnsubmit" onClick={handleLogin}  >Login</button>
             </Link>
+            
+            <Link to="/register">
+            <button className="bg-slate-200 rounded-xl mt-14 w-44 h-8 mt-3">Registrieren</button>
+            </Link>
         </div>
 
-        
-        
-        
     </>)
   }
