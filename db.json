@@ -19,11 +19,6 @@
       "id": 4,
       "body": "here are comments here are comments",
       "email": "justinmartan@gmail.com"
-    },
-    {
-      "email": "benni",
-      "body": "benni benni",
-      "id": 5
     }
   ],
   "user": [
@@ -36,6 +31,26 @@
       "id": 2,
       "email": "bennigaertner2005@gmail.com",
       "passwort": "bennitest"
+    },
+    {
+      "email": "justin@gmail.com",
+      "passwort": "jusi123",
+      "id": 3
+    },
+    {
+      "email": "justin@gmail.com",
+      "passwort": "jusi123",
+      "id": 4
+    },
+    {
+      "email": "buri123@gmail.com",
+      "passwort": "buri123",
+      "id": 5
+    },
+    {
+      "email": "hallo",
+      "passwort": "hallo",
+      "id": 6
     }
   ]
 }
