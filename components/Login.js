@@ -7,6 +7,7 @@ import "./Stylesheet.css";
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState(''); 
+  const [path, setPath] = useState('');
 
   const handleLogin = () => {
     if (email.trim() === '' || password.trim() === ''){
@@ -19,9 +20,21 @@ export default function Login() {
   localStorage.setItem('email', email);
   localStorage.setItem('password', hashedPassword);
 
+  if(email == "admin" & password == "admin")
+  {
+    setPath("/admin")
+  }else{
+    setPath("/comment")
+  }
+
 }
 
-const toPath = email.trim() === '' || password.trim() === '' ? null : "/comment";
+// hook mit path variable useState 
+// setPath auf path setzten mit IF abrage 
+// Path variabel unten einsetzen
+
+
+// const toPath = email.trim() === '' || password.trim() === '' ? null : "/comment";
 
    
     return(<>
@@ -33,7 +46,7 @@ const toPath = email.trim() === '' || password.trim() === '' ? null : "/comment"
             <label className="mt-7 text-xl">Passwort</label>
             <input className="bg-slate-100  mt-2 w-60" type="password" id="password" placeholder="Passwort" value={password} onChange={e => setPassword(e.target.value)}/>
 
-            <Link to={toPath}>
+            <Link to={path}>
               <button className="bg-slate-200 rounded-xl mt-14 w-60 h-8" type="submit" id="btnsubmit" onClick={handleLogin}  >Login</button>
             </Link>
         </div>

@@ -2,14 +2,17 @@ import React, { useEffect, useState } from "react";
 import { Routes, Route } from 'react-router-dom'
 import Login from "./Login";
 import User from "./User"
+import Admin from "./admin"
 
 
 export default function App() {
     const [comments, setComments] = useState([]);
+    const [user, setUser] = useState([]);
 
     useEffect(() => {
         getComments();
     }, []);
+
 
     const getComments = () => {
         fetch('http://localhost:3000/comments')
@@ -22,12 +25,22 @@ export default function App() {
         })
     }
 
-
+    const getUsers = () => {
+        fetch('http://localhost:3000/user')
+        .then(res => res.json())
+        .then(data => {
+            setUser(data)
+        })
+        .catch(error => {
+            console.log(error)
+        })
+    }
 
     return( <>
             
     <Routes>
         <Route index element={<Login />} />
+        <Route path="admin" element={<Admin user={user}/>} />
         <Route path="login" element={<Login/>} />
         <Route path="comment" element={<User comments={comments} />} />
     </Routes>
